@@ -1,0 +1,159 @@
+📄 Product Requirements Document (PRD)
+🤖 AI Chatbot for eCommerce Websites
+🧾 1. Product Overview
+
+Product Name: AI Chatbot for Business Websites
+Type: Web-based AI Assistant
+Platform: eCommerce Websites
+
+📌 Description
+
+An intelligent chatbot integrated into eCommerce platforms that assists users with:
+
+Product discovery
+Customer support
+Order assistance
+Personalized recommendations
+
+The chatbot simulates a human-like shopping assistant to improve engagement and conversions.
+
+🎯 2. Goals & Objectives
+🎯 Business Goals
+Increase conversion rates 📈
+Reduce customer support workload 🤝
+Improve user engagement 💬
+🎯 Product Goals
+Provide real-time responses
+Deliver accurate product recommendations
+Ensure smooth user interaction
+👥 3. Target Users
+🛍️ Primary Users
+Online shoppers
+First-time visitors
+🧑‍💼 Secondary Users
+Business owners
+Customer support teams
+💡 4. Problem Statement
+
+Users on eCommerce websites often:
+
+Struggle to find relevant products
+Have unanswered queries
+Drop off due to lack of support
+
+👉 Solution:
+An AI chatbot that provides instant, intelligent assistance like a real store assistant.
+
+🧠 5. Product Features
+🔹 Core Features
+1. 💬 Conversational Chat
+Real-time messaging
+Handles FAQs (returns, shipping, pricing)
+2. 🛒 Product Recommendation
+Suggest products based on user queries
+Example: “Best phone under ₹20,000”
+3. 🔍 Smart Product Search
+Natural language understanding
+Filters products dynamically
+4. 📦 Order Support
+Track orders
+Return/cancel guidance
+🔹 Advanced Features
+AI-powered responses (LLM integration)
+Voice interaction 🎤
+Multi-language support 🌍
+Personalized suggestions
+Chat history
+⚙️ 6. Functional Requirements
+ID	Requirement
+FR1	System must accept user messages
+FR2	System must process natural language input
+FR3	System should identify user intent
+FR4	System must fetch relevant products
+FR5	System should return responses within 2 seconds
+FR6	System must support FAQ handling
+🚫 7. Non-Functional Requirements
+Type	Requirement
+Performance	Response time < 2 sec
+Scalability	Handle multiple users
+Security	Secure API endpoints
+Usability	Simple chat UI
+Availability	24/7 uptime
+🏗️ 8. System Architecture
+Frontend (Chat UI)
+   ↓
+Backend API (Flask/FastAPI)
+   ↓
+NLP Engine
+   ↓
+Database (Products + FAQs)
+   ↓
+AI Model (Optional)
+🗄️ 9. Data Requirements
+📦 Product Data
+Name
+Price
+Category
+Description
+❓ FAQ Data
+Question
+Answer
+🔄 10. User Flow
+User opens website
+Chatbot appears
+User sends message
+System processes input
+Bot responds with:
+Answer
+Product suggestion
+Action
+🧪 11. Use Cases
+✅ Use Case 1: Product Search
+
+Input: “Show me shoes under ₹2000”
+Output: Filtered product list
+
+✅ Use Case 2: FAQ
+
+Input: “What is return policy?”
+Output: Predefined answer
+
+✅ Use Case 3: Recommendation
+
+Input: “Suggest best laptop”
+Output: Recommended products
+
+📊 12. Success Metrics (KPIs)
+Response accuracy (%)
+Conversion rate increase 📈
+User engagement time
+Bounce rate reduction
+⚠️ 13. Risks & Challenges
+Incorrect intent detection
+Limited training data
+Handling complex queries
+🚀 14. Roadmap
+Phase 1 (MVP)
+Basic chatbot
+Rule-based responses
+Product suggestions
+Phase 2
+NLP integration
+Database connectivity
+Phase 3
+AI/LLM integration
+Personalization
+🔐 15. Assumptions & Constraints
+Assumptions
+Users interact in English (initially)
+Product database is available
+Constraints
+Limited computing resources
+API rate limits (if using AI APIs)
+🧾 16. Conclusion
+
+This product aims to transform traditional eCommerce support into an AI-driven conversational experience, improving:
+
+Customer satisfaction
+Business efficiency
+Sales performance

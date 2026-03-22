@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="store-background">
+        <h1>Welcome to CartGenius AI</h1>
+        <p>Smarter Conversations. Better Shopping</p>
+    </div>
+
+    <!-- Chat Widget button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <i class="fa-solid fa-comment-dots"></i>
+    </button>
+
+    <!-- Chat Container -->
+    <div id="chatbot-container" class="chatbot-container hidden">
+        <div class="chatbot-header">
+            <div class="header-info">
+                <div class="bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div>
+                    <h3>Cart Assistant</h3>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+            <button id="close-chatbot" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <!-- Messages go here -->
+            <div class="message bot">
+                <div class="message-content">
+                    Hi there! 👋 I'm CartGenius AI , your AI shopping assistant. How can I help you today?
+                </div>
+            </div>
+            <div class="quick-replies">
+                <button class="quick-reply" onclick="sendMessage('Best phone under ₹20000')">Phones under ₹20k</button>
+                <button class="quick-reply" onclick="sendMessage('What is the return policy?')">Return Policy</button>
+                <button class="quick-reply" onclick="sendMessage('Show me shoes')">Running Shoes</button>
+            </div>
+        </div>
+
+        <div class="chatbot-input">
+            <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off" />
+            <button id="send-btn" class="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
